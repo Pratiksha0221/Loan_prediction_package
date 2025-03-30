@@ -1,1 +1,35 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "loan_prediction"
+version = "0.1.0"
+description = "A Python package for loan prediction, including data preprocessing, visualization, and model training."
+authors = [{ name = "Pratiksha Pingle", email = "140797571+Pratiksha0221@users.noreply.github.com" }]
+license = { text = "MIT" }
+readme = "README.md"
+requires-python = ">=3.7"
+
+dependencies = [
+    "pandas",
+    "numpy",
+    "matplotlib",
+    "seaborn",
+    "scikit-learn"
+]
+
+[project.urls]
+Homepage = "https://github.com/Pratiksha0221/Loan_prediction_package"
+Repository = "https://github.com/Pratiksha0221/Loan_prediction_package"
+Issues = "https://github.com/Pratiksha0221/Loan_prediction_package/issues"
+
+[tool.setuptools.packages.find]
+where = ["loan_prediction"]
+
+[tool.black]
+line-length = 88
+
+[tool.flake8]
+max-line-length = 88
  
